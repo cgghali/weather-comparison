@@ -15,6 +15,7 @@ public class LocalChromeDriver implements DriverInterface {
 	public LocalChromeDriver() {
 		// LOG.trace("Launching the chromedriver");
 		this.driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		this.driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 	}
 
