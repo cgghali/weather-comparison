@@ -5,6 +5,6 @@ node{
       }
       
       stage('Maven clean Package'){
-          bat "mvn clean package test"
+          bat "mvn clean test"
   }
 }
